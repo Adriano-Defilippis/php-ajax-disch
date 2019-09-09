@@ -10710,17 +10710,17 @@ function getAlbumList() {
     url: "api_disc.php",
     method: "GET",
     success: function success(data) {
-      /* Funzione per stampare con handlebars */
+      console.log("succes!!");
+      console.log(data);
       handlebarsPrintAlbum(data);
-      /* Funzione per richiedere all'api l'url dell'immagine */
-
-      getImgUrl();
     },
     error: function error(errors) {
       console.log("errore collegamento ajax api_disc.php");
     }
   });
 }
+
+;
 
 function handlebarsPrintAlbum(data) {
   var source = $('#album-template').html();
@@ -10731,32 +10731,19 @@ function handlebarsPrintAlbum(data) {
     var context = {
       name: el.artist,
       album: el.album,
-      relase: el.relase
+      relase: el.relase,
+      url: "img/" + el.urlimg
     };
     var html = template(context);
     $('.res').append(html);
   }
 }
 
-function getImgUrl() {
-  $.ajax({
-    url: "api_img.php",
-    method: "GET",
-    success: function success(data) {
-      console.log("succes getimgURL!!");
-      console.log(data);
-    },
-    error: function error(errors) {
-      console.log("errore richiesta url img");
-    }
-  });
-}
-
 ;
 
 function init() {
   console.log("Hello World");
-  /* getAlbumList(); */
+  getAlbumList();
 }
 
 $(document).ready(init);

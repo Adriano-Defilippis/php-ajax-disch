@@ -54,9 +54,11 @@ padding: 50px 25px;
     position: absolute;
     top: 0;
     padding: 25px 20px;
+    display: none;
 }
 
 .res .card:hover ul{
+    display: block;
     background-color: lightgreen;
 }
   

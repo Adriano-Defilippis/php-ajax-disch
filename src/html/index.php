@@ -16,7 +16,7 @@
     <script id="album-template" type="text/x-handlebars-template">
      
     <div class="card">
-
+      <img src='{{{url}}}' alt='{{alt}}'>
       <ul>
         <li><strong>Artista: </strong> {{name}}</li>
         <li><strong>Album: </strong> {{album}}</li>
@@ -63,19 +63,17 @@
       <div class="res">
       <h1>Album in evidenza</h1>
 
-      
-        
-        <?php 
+         <?php 
 
           /* Stampo con funzione php */
-          echo PrintKeyValue($albums);
-         
+          /* echo PrintKeyValue($albums); */
 
-        
+          
 
-        
+        ?> 
+      
 
-        ?>
+
       </div>
         
     </div>

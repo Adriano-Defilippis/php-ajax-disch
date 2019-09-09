@@ -47,7 +47,7 @@
             "artist" => "Red Hot Chili Peppers",
             "album" => "The Uplift Mofo Party Plan",
             "relase" => "09/24/1987",
-            "url_img" => "s2red_hot_chili_peppers/The-uplift-mofo-Party-Plan.jpg"
+            "url_img" => "red_hot_chili_peppers/The-uplift-mofo-Party-Plan.jpg"
 
         ],
         [
