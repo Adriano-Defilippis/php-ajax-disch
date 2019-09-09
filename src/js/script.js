@@ -20,6 +20,11 @@ function getAlbumList(){
     });
 };
 
+function handlebarsPrintAlbum(data){
+
+    var source = $('#')
+}
+
 function init() {
 
     console.log("Hello World");

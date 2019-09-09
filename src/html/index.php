@@ -13,7 +13,7 @@
     <!-- JS: HANDLEBARS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
     <!-- TEMPLATE: MESSAGE MENU -->
-    <script id="item-template" type="text/x-handlebars-template">
+    <script id="album-template" type="text/x-handlebars-template">
     </script>
 
     <!-- CSS: MY STYLE -->

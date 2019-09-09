@@ -10721,6 +10721,10 @@ function getAlbumList() {
 
 ;
 
+function handlebarsPrintAlbum(data) {
+  var source = $('#');
+}
+
 function init() {
   console.log("Hello World");
   getAlbumList();
@@ -10737,7 +10741,7 @@ $(document).ready(init);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\src\\scss\\master.scss'\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\webpack\\lib\\NormalModule.js:313:20\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:73:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
 
 /***/ }),
 
