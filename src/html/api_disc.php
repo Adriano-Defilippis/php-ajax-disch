@@ -1,9 +1,9 @@
 
 <?php 
 
-    
-    /* IDENTIFICAZIONE OGGETTO JSON */
     header('Content-type: application/json');
+
+   /*  $artist = $_GET['artist']; */
 
     $albums_2 = [
         [
@@ -80,8 +80,14 @@
         
     ]; 
 
+    /* $res = [];
 
-    
+    foreach ($albums_2 as $album) {
+        
+        if ($album["artist"] == $artist) {
+            $res[] = $album;
+        };
+    }; */
 
 
 

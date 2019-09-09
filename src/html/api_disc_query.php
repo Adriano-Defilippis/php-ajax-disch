@@ -1,9 +1,8 @@
-
 <?php 
 
     header('Content-type: application/json');
 
-   /*  $artist = $_GET['artist']; */
+    $artist = $_GET['artist'];
 
     $albums_2 = [
         [
@@ -80,18 +79,18 @@
         
     ]; 
 
-    /* $res = [];
+    $res = [];
 
     foreach ($albums_2 as $album) {
         
         if ($album["artist"] == $artist) {
             $res[] = $album;
         };
-    }; */
+    };
 
 
 
-    echo json_encode($albums_2);
+    echo json_encode($res);
 
 
 

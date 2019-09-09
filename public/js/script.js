@@ -10714,6 +10714,11 @@ function getAlbumList() {
       console.log(data);
       handlebarsPrintAlbum(data);
       getArrArtisti(data);
+      /* queryArtist(); */
+
+      /* FUNZIONE PER IVIARE UNA QUERY AL FILE JSON */
+
+      queryArtist();
     },
     error: function error(errors) {
       console.log("errore collegamento ajax api_disc.php");
@@ -10722,6 +10727,27 @@ function getAlbumList() {
 }
 
 ;
+/* FUNZIONE PER IVIARE UNA QUERY AL FILE JSON */
+
+function queryArtist() {
+  $('.res .card').remove();
+  var query = {
+    "artist": "Metallica"
+  };
+  $.ajax({
+    url: "api_disc_query.php",
+    method: "GET",
+    data: query,
+    success: function success(data) {
+      console.log("succes!!");
+      console.log(data);
+      handlebarsPrintAlbum(data);
+    },
+    error: function error(errors) {
+      console.log("errore collegamento ajax api_disc.php");
+    }
+  });
+}
 
 function handlebarsPrintAlbum(data) {
   var source = $('#album-template').html();
