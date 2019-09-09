@@ -7,9 +7,6 @@
     <!-- FONT: FONTAWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
-    <!-- JS: JQUERY -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- JS: MOMENT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 
@@ -34,7 +31,7 @@
 
     /* Includo il Mio framework di funzioni esterne */
     include 'functions.php';
-    include 'api_disc.php';
+    /* include 'api_disc.php'; */
       
     ?>
     
@@ -50,9 +47,10 @@
       
       <div class="res">
       <h1>Album in evidenza</h1>
-        <!-- Stampo con funzione php  -->
+        
         <?php 
-          echo PrintKeyValue($albums);
+          /* Stampo con funzione php */
+          /* echo PrintKeyValue($albums); */
         ?>
       </div>
         
