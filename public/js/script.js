@@ -10712,6 +10712,9 @@ function getAlbumList() {
     success: function success(data) {
       console.log("succes!!");
       console.log(data);
+      /* Funzione per stampare con handlebars */
+
+      handlebarsPrintAlbum(data);
     },
     error: function error(errors) {
       console.log("errore collegamento ajax api_disc.php");
@@ -10719,10 +10722,20 @@ function getAlbumList() {
   });
 }
 
-;
-
 function handlebarsPrintAlbum(data) {
-  var source = $('#');
+  var source = $('#album-template').html();
+  var template = Handlebars.compile(source);
+
+  for (var i = 0; i < data.length; i++) {
+    var el = data[i];
+    var context = {
+      name: el.artist,
+      album: el.album,
+      relase: el.relase
+    };
+    var html = template(context);
+    $('.res').append(html);
+  }
 }
 
 function init() {
@@ -10734,26 +10747,14 @@ $(document).ready(init);
 
 /***/ }),
 
-/***/ "./src/scss/master.scss":
-/*!******************************!*\
-  !*** ./src/scss/master.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\src\\scss\\master.scss'\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\webpack\\lib\\NormalModule.js:313:20\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:73:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-
-/***/ }),
-
 /***/ 0:
-/*!*******************************************************!*\
-  !*** multi ./src/js/script.js ./src/scss/master.scss ***!
-  \*******************************************************/
+/*!********************************!*\
+  !*** multi ./src/js/script.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Adriano\Documents\Boolean\Progetti\php-ajax-dischi\src\js\script.js */"./src/js/script.js");
-module.exports = __webpack_require__(/*! C:\Users\Adriano\Documents\Boolean\Progetti\php-ajax-dischi\src\scss\master.scss */"./src/scss/master.scss");
+module.exports = __webpack_require__(/*! C:\Users\Adriano\Documents\Boolean\Progetti\php-ajax-dischi\src\js\script.js */"./src/js/script.js");
 
 
 /***/ })

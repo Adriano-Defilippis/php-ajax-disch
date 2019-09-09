@@ -14,6 +14,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
     <!-- TEMPLATE: MESSAGE MENU -->
     <script id="album-template" type="text/x-handlebars-template">
+      
+    <ul class="card">
+        <li><strong>Artista: </strong> {{name}}</li>
+        <li><strong>Album: </strong> {{album}}</li>
+        <li><strong>Data di Pubblicazione: </strong> {{relase}}</li>
+      </ul>
+      
     </script>
 
     <!-- CSS: MY STYLE -->
@@ -47,6 +54,8 @@
       
       <div class="res">
       <h1>Album in evidenza</h1>
+
+      
         
         <?php 
           /* Stampo con funzione php */

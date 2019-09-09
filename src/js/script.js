@@ -10,7 +10,9 @@ function getAlbumList(){
         success: function(data){
             console.log("succes!!");
             console.log(data);
-            
+
+            /* Funzione per stampare con handlebars */
+            handlebarsPrintAlbum(data);
             
         },
         error: function(errors){
@@ -18,11 +20,25 @@ function getAlbumList(){
             
         }
     });
-};
+}
 
 function handlebarsPrintAlbum(data){
 
-    var source = $('#')
+    var source = $('#album-template').html();
+    var template = Handlebars.compile(source);
+
+    for (let i = 0; i < data.length; i++) {
+        const el = data[i];
+
+        var context = {
+            name: el.artist,
+            album: el.album,
+            relase: el.relase
+        };
+        var html = template(context);
+        $('.res').append(html);
+    }
+
 }
 
 function init() {
