@@ -47,8 +47,9 @@
     
     <div class="container">
 
-      <h1>Ciaoooooo</h1>
+      
       <div class="res">
+      <h1>Album in evidenza</h1>
         <!-- Stampo con funzione php  -->
         <?php 
           echo PrintKeyValue($albums);
