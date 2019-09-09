@@ -13,6 +13,7 @@ function getAlbumList(){
             
         
             handlebarsPrintAlbum(data);
+            getArrArtisti(data);
 
         },
         error: function(errors){
@@ -47,6 +48,33 @@ function handlebarsPrintAlbum(data){
     }
 
 };
+
+function getArrArtisti(data){
+
+    var arrArtisti = [];
+
+    for (let i = 0; i < data.length; i++) {
+        const el = data[i];
+
+        if (!arrArtisti.includes(el.artist)){
+            arrArtisti.push(el.artist);
+        }
+
+        
+    }
+    console.log(arrArtisti);
+    
+    var string = "";
+
+    for (let j = 0; j < arrArtisti.length; j++) {
+        const el = arrArtisti[j];
+
+        string = "<option>"+ el + "</option>";
+        
+        $('#select_artist').append(string);
+    
+    }
+}
 
 
 

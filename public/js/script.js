@@ -10713,6 +10713,7 @@ function getAlbumList() {
       console.log("succes!!");
       console.log(data);
       handlebarsPrintAlbum(data);
+      getArrArtisti(data);
     },
     error: function error(errors) {
       console.log("errore collegamento ajax api_disc.php");
@@ -10740,6 +10741,27 @@ function handlebarsPrintAlbum(data) {
 }
 
 ;
+
+function getArrArtisti(data) {
+  var arrArtisti = [];
+
+  for (var i = 0; i < data.length; i++) {
+    var el = data[i];
+
+    if (!arrArtisti.includes(el.artist)) {
+      arrArtisti.push(el.artist);
+    }
+  }
+
+  console.log(arrArtisti);
+  var string = "";
+
+  for (var j = 0; j < arrArtisti.length; j++) {
+    var _el = arrArtisti[j];
+    string = "<option>" + _el + "</option>";
+    $('#select_artist').append(string);
+  }
+}
 
 function init() {
   console.log("Hello World");

@@ -24,7 +24,10 @@
       </ul>
 
     </div>
-      
+    <!-- GET ARTISTI DISPONIBILI E PRINT IN SELECT -->
+    <script id="option-artist" type="text/x-handlebars-template">
+     
+      <option value="{{artista}}">{{artista}}</option>      
 
     </script>
 
@@ -39,7 +42,7 @@
     
 
     <!-- DICHIARAZIONE VARIABILI PHP -->
-    <?php 
+   <!--  <?php 
 
     /* Includo il Mio framework di funzioni esterne */
     include 'includes/functions.php';
@@ -48,7 +51,7 @@
 
     include 'includes/db_img.php';
       
-    ?>
+    ?> -->
     
   </head>
 
@@ -59,18 +62,19 @@
     
     <div class="container">
 
+      <select name="artist" id="select_artist"></select>
       
       <div class="res">
       <h1>Album in evidenza</h1>
 
-         <?php 
+         <!-- <?php 
 
           /* Stampo con funzione php */
           /* echo PrintKeyValue($albums); */
 
           
 
-        ?> 
+        ?>  -->
       
 
 
