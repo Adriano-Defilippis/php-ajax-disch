@@ -1,6 +1,7 @@
 
 <?php 
 
+    /* Includo il Mio framework di funzioni esterne */
     include 'functions.php';
 
 

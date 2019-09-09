@@ -42,12 +42,19 @@
   <!-- BODY -->
   <body>
 
-    <h1>Ciaoooooo</h1>
-    <?php 
+    
+    <div class="container">
 
-      echo PrintKeyValue($albums);
-
-    ?>
+      <h1>Ciaoooooo</h1>
+      <div class="res">
+        <!-- Stampo con funzione php  -->
+        <?php 
+          echo PrintKeyValue($albums);
+        ?>
+      </div>
+        
+    </div>
+      
 
 
 

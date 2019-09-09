@@ -1,5 +1,6 @@
 <?php 
 
+/* Stampo lista album chive valore, con funzione php esterna */
 function PrintKeyValue($data){
 
     echo "<ul>";
