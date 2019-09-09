@@ -10705,9 +10705,25 @@ return jQuery;
 
 $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+function getAlbumList() {
+  $.ajax({
+    url: "api_disc.php",
+    method: "GET",
+    success: function success(data) {
+      console.log("succes!!");
+      console.log(data);
+    },
+    error: function error(errors) {
+      console.log("errore collegamento ajax api_disc.php");
+    }
+  });
+}
+
+;
+
 function init() {
   console.log("Hello World");
-  $('.res').append("ciaoooooo");
+  getAlbumList();
 }
 
 $(document).ready(init);

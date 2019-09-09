@@ -51,6 +51,7 @@
         <?php 
           /* Stampo con funzione php */
           /* echo PrintKeyValue($albums); */
+
         ?>
       </div>
         
