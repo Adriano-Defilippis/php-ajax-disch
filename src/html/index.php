@@ -14,13 +14,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
     <!-- TEMPLATE: MESSAGE MENU -->
     <script id="album-template" type="text/x-handlebars-template">
-      
-    <ul class="card">
+     
+    <div class="card">
+
+      <ul>
         <li><strong>Artista: </strong> {{name}}</li>
         <li><strong>Album: </strong> {{album}}</li>
         <li><strong>Data di Pubblicazione: </strong> {{relase}}</li>
       </ul>
+
+    </div>
       
+
     </script>
 
     <!-- CSS: MY STYLE -->
@@ -37,8 +42,11 @@
     <?php 
 
     /* Includo il Mio framework di funzioni esterne */
-    include 'functions.php';
+    include 'includes/functions.php';
     /* include 'api_disc.php'; */
+    include 'includes/db_albums.php';
+
+    include 'includes/db_img.php';
       
     ?>
     
@@ -58,8 +66,14 @@
       
         
         <?php 
+
           /* Stampo con funzione php */
-          /* echo PrintKeyValue($albums); */
+          echo PrintKeyValue($albums);
+         
+
+        
+
+        
 
         ?>
       </div>

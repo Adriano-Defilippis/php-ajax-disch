@@ -8,37 +8,57 @@
   
     user-select: none;
     list-style: none;
-  }
+}
   
-  .container {
+.container {
+
+width: 100vw;
+height: 100vh;
+
+padding: 50px 25px;
+
+
+}
+
+.res{
+    margin: 20px auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.res h1{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
   
-    width: 100vw;
-    height: 100vh;
-  
-    padding: 50px 25px;
-  
-    overflow: hidden;
-  }
-  
-  .res{
-      margin: 20px auto;
-      width: 60%;
-      display: flex;
-      flex-wrap: wrap;
-      
-  
-  }
-  
-  .res h1{
-      width: 100%;
-      margin-bottom: 10px;
-  
-  }
-  
-  .res ul{
-      width: calc((100% / 3) - 10px);
+
+.res .card {
+    width: calc((100% / 3) - 10px);
       margin: 5px;
-  }
+      position: relative;
+}
+
+.res .card img{
+    width: 100%;
+    height: auto;
+}
+
+.res ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 25px 20px;
+}
+
+.res .card:hover ul{
+    background-color: lightgreen;
+}
   
   .res ul li{
       margin: 10px auto;

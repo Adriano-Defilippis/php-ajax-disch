@@ -8,12 +8,12 @@ function getAlbumList(){
         method: "GET",
 
         success: function(data){
-            console.log("succes!!");
-            console.log(data);
-
+            
             /* Funzione per stampare con handlebars */
             handlebarsPrintAlbum(data);
-            
+
+            /* Funzione per richiedere all'api l'url dell'immagine */
+            getImgUrl();
         },
         error: function(errors){
             console.log("errore collegamento ajax api_disc.php");
@@ -39,12 +39,36 @@ function handlebarsPrintAlbum(data){
         $('.res').append(html);
     }
 
-}
+} 
+
+function getImgUrl(){
+
+    $.ajax({
+
+        url: "api_img.php",
+        method: "GET",
+
+        success: function(data){
+            console.log("succes getimgURL!!");
+            console.log(data);
+
+            
+            
+        },
+        error: function(errors){
+            console.log("errore richiesta url img");
+            
+        }
+    });
+
+};
 
 function init() {
 
     console.log("Hello World");
-    getAlbumList()
+    /* getAlbumList(); */
+
+    
 }
 
 $(document).ready(init);

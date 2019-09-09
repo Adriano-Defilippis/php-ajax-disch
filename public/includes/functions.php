@@ -6,13 +6,18 @@ function PrintKeyValue($data){
     /* echo "<ul>"; */
     foreach ($data as $values) {
 
+        echo "<div class='card'><img class='copertina' src='img/". $values["url_img"] ."' alt='". $values["url_img"] ."'>";
         echo "<ul>".
                 "<li>Artista: ". $values["artist"] . "</li>".
                 "<li>Album: ". $values["album"] . "</li>".
-                "<li>Data di pubblicazione: ". $values["relase"] . "</li></ul>";  
+                "<li>Data di pubblicazione: ". $values["relase"] . "</li></ul></div>";  
     }
-    /* echo "</ul>"."<br>"; */
+    
 };
+
+
+
+
 
 
 
