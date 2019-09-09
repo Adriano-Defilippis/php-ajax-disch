@@ -108,7 +108,7 @@ $(document).ready(init);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: Dart Sass version 1.23.0-module.beta.1 is incompatible with ^1.3.0.\n    at getRenderFuncFromSassImpl (C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\sass-loader\\dist\\index.js:159:13)\n    at Object.loader (C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\sass-loader\\dist\\index.js:79:18)\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\webpack\\lib\\NormalModule.js:313:20\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at runSyncOrAsync (C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:143:3)\n    at iterateNormalLoaders (C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:232:2)\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:205:4\n    at C:\\Users\\Adriano\\Documents\\Boolean\\Progetti\\php-ajax-dischi\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:73:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
 
 /***/ }),
 

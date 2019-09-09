@@ -3,15 +3,15 @@
 /* Stampo lista album chive valore, con funzione php esterna */
 function PrintKeyValue($data){
 
-    echo "<ul>";
+    /* echo "<ul>"; */
     foreach ($data as $values) {
 
-        echo
-            "<li>". $values["artist"] . "</li>".
-            "<li>". $values["album"] . "</li>".
-            "<li>". $values["relase"] . "</li>";  
+        echo "<ul>".
+                "<li>Artista: ". $values["artist"] . "</li>".
+                "<li>Album: ". $values["album"] . "</li>".
+                "<li>Data di pubblicazione: ". $values["relase"] . "</li></ul>";  
     }
-    echo "</ul>"."<br>";
+    /* echo "</ul>"."<br>"; */
 };
 
 

@@ -20,9 +20,9 @@
     </script>
 
     <!-- CSS: MY STYLE -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/master.css">
     <!-- JS: MY SCRIPT -->
-    <script src="script.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
     <!-- IMG: ICON -->
     <link rel="shortcut icon" href="img/me_icon.gif">
     <title>Spotify-Web</title>
@@ -32,6 +32,8 @@
     <!-- DICHIARAZIONE VARIABILI PHP -->
     <?php 
 
+    /* Includo il Mio framework di funzioni esterne */
+    include 'functions.php';
     include 'api_disc.php';
       
     ?>
